@@ -200,8 +200,8 @@ function gradesAvg(arr) {
 function studentsResult(arr) {
     const myArray = arr.map((value => ({ 
         ...value,
-        ...( ((value.gradsList.reduce((x, y) => x + y)) / value.gradsList.length ) >= 50 && { result: "Passed" }),
-        ...( ((value.gradsList.reduce((x, y) => x + y)) / value.gradsList.length ) < 50 && { result: "Failed" }),
+        ...( ((value.gradsList.reduce((a, b) => a + b)) / value.gradsList.length ) >= 50 && { result: "Passed" }),
+        ...( ((value.gradsList.reduce((a, b) => a + b)) / value.gradsList.length ) < 50 && { result: "Failed" }),
        
       
 
