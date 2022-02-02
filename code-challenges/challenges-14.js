@@ -34,11 +34,10 @@ const LastWord = (str) => {
 const LastWord_2 = (str) => {
     let result = str.split(' ');
 
-  
     return result[result.length-1].toString();
 }
-  // let result2 = result.slice(-1);
-    // return result2.toString();
+
+  
 // 3) ---------------------
 // 
 // Number 2 was easy right?, ok then using the splice method replace all the "I" with "We", "am" with "are" and "was" with "were"
@@ -72,17 +71,10 @@ const replaceWords = (str) => {
 // ------------------------
 
 const arrToStr = (arr) => {
-
     arr.splice(4,1,arr[4]+",")
     return arr.join(" ");
 }
-//    for (let i = 0; i < arr.length; i++) {
-//        if (i%4 ==0 && i !=0 ) {
-//            arr[i] = arr[i] + ",";
-//        }
-       
-//    }; return arr.join(" ");
-//}
+
 // 5) ---------------------
 // 
 // Simon got a string manipulation question for his interview, it asked him to replace the duplicated letters in a string to an indicator and counter
