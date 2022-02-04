@@ -1,0 +1,67 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "## Hacker Rank\n\nFor Thursdays you will be solving some selected challenges on HackerRank, please create an account if you don't have then\nFollow the links below:\nread them carefully and solve them then copy-paste your solution below in Code Block"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Required**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Equality In An Array](https://www.hackerrank.com/challenges/equality-in-a-array/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function equalizeArray(arr) {\n    let arryObj = {};\n    arr.forEach(element => {\n        if (arryObj[element]) {\n            arryObj[element]++;\n        } else {\n            arryObj[element] = 1;\n        }\n\n    });\n\n    let result = Object.values(arryObj);\n    let maximum = 0;\n    for (let i = 0; i < result.length; i++) {\n        if (result[i] > maximum) {\n            maximum = result[i]\n        }\n    }\n    console.log(arryObj);\n    console.log(result);\n    console.log(maximum);\n    console.log(arr.length);\n    return (arr.length - maximum);\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### **Optional**:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function howManyGames(p, d, m, s) {\n    let counter = 0;\n    while (s > p && p > m) {\n        p = p - d;\n        counter++;\n    } if (s <= 80) {\n        counter++;\n    } else {\n        counter = counter + 2;\n    }\n    return counter;\n}\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "#####  [Sherlock And Squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem?isFullScreen=true)\n\nSolution:"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function squares(a,b) {\n    let counter = 0;\n    let x = Math.ceil(Math.sqrt(a));\n    let y = Math.floor(Math.sqrt(b))\n    for (let i = x; i <= y; i++) {\n        counter++;\n    } return counter;\n    }\n    "
+            ],
+            "outputs": []
+        }
+    ]
+}
