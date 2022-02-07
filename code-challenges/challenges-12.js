@@ -69,7 +69,7 @@ const oddFiltration = (arr) => {
 // ------------------------
 const cvsFiltration = (arr) => {
 
-    const x = arr.filter(function (obj) {
+    const x = arr.filter(obj => {
         return obj.tech == "JS" && obj.yearsOfExperience > 5
 
     });

@@ -58,10 +58,10 @@ const objectCounter = (obj) => {
 
 const stringReverse = (str) => {
     let myArray = str.split(" ");
-
-    let newString = myArray.reduce((reversed, word) => {
-     return word + " " + reversed 
- },)
+    let reserved = (reversed, word) => {
+        return word + " " + reversed 
+    }
+    let newString = myArray.reduce(reserved)
    return newString;
 }
 
