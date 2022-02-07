@@ -58,13 +58,12 @@ const objectCounter = (obj) => {
 
 const stringReverse = (str) => {
     let myArray = str.split(" ");
-
-    let newString = myArray.reduce((reversed, word) => {
-     return word + " " + reversed 
- },)
+    let reserved = (reversed, word) => {
+        return word + " " + reversed 
+    }
+    let newString = myArray.reduce(reserved)
    return newString;
 }
-
 // 3) ---------------------
 // 
 // Using the same array of object from the first question, create new object that contain the candidates name as keys (voting for),
