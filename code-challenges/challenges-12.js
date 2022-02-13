@@ -107,7 +107,7 @@ const vowelsFiltration = (arr) => {
     return noVowel;
     }
     
-    
+  
 // 4) ---------------------
 //
 // An employer wants to compare between his employees skills, write a function that will extract the differences 
