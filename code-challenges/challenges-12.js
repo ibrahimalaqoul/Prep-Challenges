@@ -69,7 +69,7 @@ const oddFiltration = (arr) => {
 // ------------------------
 const cvsFiltration = (arr) => {
 
-    const x = arr.filter(function (obj) {
+    const x = arr.filter(obj => {
         return obj.tech == "JS" && obj.yearsOfExperience > 5
 
     });
@@ -107,7 +107,7 @@ const vowelsFiltration = (arr) => {
     return noVowel;
     }
     
-    
+  
 // 4) ---------------------
 //
 // An employer wants to compare between his employees skills, write a function that will extract the differences 
